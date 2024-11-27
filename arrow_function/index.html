@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+<body>
+    <h1>Arrow functions</h1>
+    <script>
+        // syntax
+        // Normal function
+        // function sayHello(){
+        //     console.log("Hello!");
+        // }
+        // sayHello();
+        // const sayHello = () => {
+        //     console.log("Hello! to the arrow functions");
+            
+        // }
+        // sayHello();
+        // add two numbers
+        // const addTwoNumbers = (a, b) =>{
+        //     return a + b;
+        // }
+        //  const sum = addTwoNumbers(8, 6);
+        //  console.log(sum);
+        
+        // const addTwoNumbers = (a, b) => a + b; no return it is called cleaner and onliner function
+        // console.log(addTwoNumbers(8, 12));
+        // arguments difference
+
+        // const addTwoNumbers = (...arguments) =>{
+        //     console.log(arguments);
+            
+        // }
+        // addTwoNumbers(1, 2, 3, 4);
+
+        // hoisting
+        //  addTwoNumbers(4);
+        // function addTwoNumbers(numbers){
+        //     console.log(numbers);
+            
+        // }
+        // console.log(sum(2)); con't access function befor intilization in arrow function we can do it normal function
+       
+        // const sum = (number) => {
+        //     return number;
+            
+        // }
+       
+        // this keyword
+        const obj = {
+            value: 20,
+            myFunc: ()=> {
+                console.log(this);
+                
+            }
+        }
+        obj.myFunc();
+
+
+    </script>
+</body>
+</html>
