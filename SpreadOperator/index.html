@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread-Operators</title>
+</head>
+<body>
+    <h1>Rest operator & Spread-Operators</h1>
+    <script>
+    //     // Rest-Operators
+    //     function addNumbers(a, b, c, d, e, f, ...args) {
+    //         // console.log(args);
+            
+    //         return a + b + c + d + e + f;
+    //     }
+    //   const res =  addNumbers(1,2,3,4,5,6,7,8,9,10,11,12);
+    //   console.log(res);
+    // Spread-Opertors
+    // const name = ["Bullet", "Bul","Bilal","Waqar"];
+    // function getNames(name1, name2, name3, name4, name5) {
+    //     console.log(name);
+        
+    
+    // }
+    // getNames(...name);
+
+    function sum(...numbers){
+        let tot = 0;
+        numbers.forEach((n)=>{
+        tot += n;
+        })
+        console.log(tot);
+        
+    }
+    sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,30);
+
+
+
+
+
+
+    
+      
+    </script>
+    
+</body>
+</html>
